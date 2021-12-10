@@ -16,7 +16,7 @@
 	======================================
 */
 .navbar{
-	display: box;
+	display: block;
 	overflow: hidden;
 	background-color: var(--navcol);
 	font-family: monospace;
