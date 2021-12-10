@@ -16,13 +16,15 @@
 	======================================
 */
 .navbar{
-	display: block;
+	display: box;
 	overflow: hidden;
 	background-color: var(--navcol);
 	font-family: monospace;
 	position:fixed;
 	top:0;
+	opacity: 1 !important;
 	width:100%;
+	z-index: 2;
 }
 .navbar a{
 	float: left;
@@ -97,7 +99,7 @@ h2{
 }
 .image:hover{
 	opacity: 0.4;
-	transition:1s;
+	z-index: 1;
 }
 .space{
 	padding:2rem;
@@ -125,7 +127,7 @@ h2{
   Multiple Stylings
   =================
 */
-.navbar a,.image:hover, .footer-content{
+.navbar a, .image:hover, .footer-content{
 	filter: drop-shadow(5px 5px 10px #f0ede1);
 }
 .navbar a:hover, .footer-content:hover{
