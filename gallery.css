@@ -22,7 +22,6 @@
 	font-family: monospace;
 	position:fixed;
 	top:0;
-	opacity: 1 !important;
 	width:100%;
 	z-index: 2;
 }
