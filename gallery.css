@@ -16,13 +16,12 @@
 	======================================
 */
 .navbar{
-	display: block;
+	display: box;
 	overflow: hidden;
 	background-color: var(--navcol);
 	font-family: monospace;
 	position:fixed;
 	top:0;
-	opacity: 1 !important;
 	width:100%;
 	z-index: 2;
 }
