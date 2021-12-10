@@ -1,0 +1,135 @@
+/* 
+	==============================
+	Defining color variables
+	==============================
+*/ 
+:root{
+	--orange: #db8d1f;
+	--brown: #1a1610;
+	--navcol: #0d0801;
+	--navhover: #241d13;
+	--texthover: #c8d2e3;
+	--delimitate: #abb2bf;
+}
+/*
+	======================================
+	Editing the navbar and navbar contents
+	======================================
+*/
+.navbar{
+	overflow: hidden;
+	background-color: var(--navcol);
+	font-family: monospace;
+	position:fixed;
+	top:0;
+	width:100%;
+}
+.navbar a{
+	float: left;
+	font-size: 16px;
+	color: var(--orange);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition:1s;
+}
+/*
+	===========
+	Footer Bar
+	===========
+*/
+.footer-content{
+	color:var(--orange);
+	padding:12px 16px;
+	text-decoration:none;
+	display:inline;
+	font-size:13px;
+}
+.navbar-footer{
+	overflow:hidden;
+	background-color:var(--navcol);
+	font-family:monospace;
+	position:fixed;
+	bottom:0;
+	width:100%;
+	padding:1rem;
+}
+/*
+	====================
+	Home Text and images
+	====================
+*/
+.main-title{
+	padding-top:2rem;
+	text-align:center;
+	font-size:30px;
+}
+.subtitle{
+	font-size:25px;
+	text-align:center;
+}
+.content-box{
+	display:block;
+	padding-top:1rem;
+	padding-left:1rem;
+	width:100%
+}
+.text-content{
+	display:inline-block;
+	width:50%;
+	font-size:17px;
+}
+.see-more{
+	font-size:18px;
+	padding-left:1rem;
+	padding-bottom:2rem;
+}
+.title{
+	font-size:22px;
+}
+.photo{
+	width:40%;
+	border-radius:10%;
+	float:right;
+}
+/* 
+	================
+	Delimitation bar
+	================
+*/
+.delimitation{
+	display:flex;
+	width:100%;
+	justify-content:center;
+	background-color:var(--delimitate);
+	padding:0.5rem;
+}
+.space{
+	padding:1rem;
+}
+/*
+    =============
+    Main Sections
+    =============
+*/
+body{
+    margin:0;
+    background-color:var(--brown);
+}
+/*
+  =================
+  Multiple Stylings
+  =================
+*/
+.navbar a, .footer-content{
+	filter: drop-shadow(5px 5px 10px #f0ede1);
+}
+.navbar a:hover, .footer-content:hover{
+	background-color: var(--navhover);
+	color:var(--texthover);
+	transition:1s;
+}
+h1,p,h2,a{
+	color:var(--orange);
+	font-family:monospace;
+}
