@@ -16,6 +16,7 @@
 	======================================
 */
 .navbar{
+	display: block;
 	overflow: hidden;
 	background-color: var(--navcol);
 	font-family: monospace;
