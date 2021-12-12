@@ -1,0 +1,132 @@
+/* 
+	==============================
+	Defining color variables
+	==============================
+*/ 
+:root{
+	--orange: #db8d1f;
+	--brown: #1a1610;
+	--navcol: #0d0801;
+	--navhover: #241d13;
+	--texthover: #c8d2e3;
+    --delimitate: #abb2bf;
+}
+/*
+	======================================
+	Editing the navbar and navbar contents
+	======================================
+*/
+.navbar{
+	overflow: hidden;
+	background-color: var(--navcol);
+	font-family: monospace;
+	position:fixed;
+	top:0;
+	width:100%;
+}
+.navbar a{
+	float: left;
+	font-size: 16px;
+	color: var(--orange);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition:1s;
+}
+/*
+	===========
+	Footer Bar
+	===========
+*/
+.footer-content{
+	color:var(--orange);
+	padding:12px 16px;
+	text-decoration:none;
+	display:inline;
+	font-size:13px;
+}
+.navbar-footer{
+	overflow:hidden;
+	background-color:var(--navcol);
+	font-family:monospace;
+	position:fixed;
+	bottom:0;
+	width:100%;
+	padding:1rem;
+}
+/*
+    =============
+    Main Sections
+    =============
+*/
+body{
+    margin:0;
+    background-color:var(--brown);
+}
+/*
+    =============
+    Text Sections
+    =============
+*/
+.content-box{
+    width:auto;
+    display:block;
+    padding-left:1rem;
+	padding-right:1rem;
+}
+.text{
+    font-family:monospace;
+    font-size:18px;
+}
+.subtitle{
+    font-size:25px;
+    font-family:monospace;
+}
+.content-image{
+	width:50%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:10%;
+}
+.motto-text{
+	font-size:37px;
+	font-family:'Corinthia', cursive;
+	text-align:center;
+}
+/*
+	========================
+	Spacing Between Sections
+	========================
+*/
+.space{
+	padding:1rem;
+}
+.delimitate{
+	display:block;
+	width:auto;
+	padding:1rem;
+	background-color:var(--delimitate);
+}
+/*
+	=================
+	Multiple stylings
+	=================
+*/
+.text,.subtitle,.page-title,.motto-text{
+	color:var(--orange);
+}
+.subtitle, .page-title{
+	text-align:center;
+}
+.text:hover,.subtitle:hover,.page-title:hover,.navbar-footer h2:hover{
+	cursor:context-menu;
+}
+.navbar a,.image:hover, .footer-content{
+	filter: drop-shadow(5px 5px 10px #f0ede1);
+}
+.navbar a:hover, .footer-content:hover{
+	background-color: var(--navhover);
+	color:var(--texthover);
+	transition:1s;
+}
